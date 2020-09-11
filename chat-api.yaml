@@ -42,7 +42,7 @@ spec:
       - env:
         - name: POSTGRES_CONNECTION_URI
           value: "postgres://postgres:password@postgres:5432/chat"
-        image: us.gcr.io/moodfabrics/api:v2
+        image: asia.gcr.io/tdi-trial-0/chat-api:v2
         imagePullPolicy: IfNotPresent
         name: chat-api
         ports:
