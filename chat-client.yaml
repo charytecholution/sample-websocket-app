@@ -8,7 +8,7 @@ metadata:
 spec:
   ports:
     - portname: cleint-port
-      port: 5008
+      port: 80
       protocal: TCP
       targetport: 8080
   selector:
@@ -39,7 +39,7 @@ spec:
         app: chat-client
     spec:
       containers:      
-        image: us.gcr.io/moodfabrics/chat-client:v2
+        image: asia.gcr.io/tdi-trial-0/chat-client:v4
         imagePullPolicy: IfNotPresent
         name: chat-client
         ports:
