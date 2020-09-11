@@ -38,10 +38,7 @@ spec:
       labels:
         app: chat-client
     spec:
-      containers:
-      - env:
-        - name: POSTGRES_CONNECTION_URI
-          value: "postgres://postgres:password@postgres:5432/chat"      
+      containers:      
         image: us.gcr.io/moodfabrics/chat-client:v2
         imagePullPolicy: IfNotPresent
         name: chat-client
